@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    color: #FF6060;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 57px;
+}
+.active-link{
+    text-decoration: underline !important;
+}
