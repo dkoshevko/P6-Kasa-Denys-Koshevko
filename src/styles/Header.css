@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 63px;
 }
 .nav-link{
     color: #FF6060;

@@ -1,0 +1,18 @@
+.banner-title{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 500;
+}
+.gallery-home{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    border-radius: 25px;
+    padding: 3rem;
+    grid-gap: 3rem;
+    margin-bottom: 40px;
+    background-color: #F6F6F6;
+}
+.gallery-home a{
+    width: 0;
+}

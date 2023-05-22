@@ -1,0 +1,30 @@
+.image-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    border-radius: 25px;
+    background-image: url('../assets/plage.jpg');
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+    margin-bottom: 40px;
+}
+  
+.image-banner .banner-overlay {
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+  
+.image-banner > * {
+    position: relative;
+    z-index: 2;
+}
+  

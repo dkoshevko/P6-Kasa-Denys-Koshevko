@@ -6,7 +6,7 @@ export default function Header() {
     const location = useLocation();
 
     return (
-        <div className="header">
+        <header className="header">
             <Link to="/">
                 <img src={logo} alt="Logo Kasa" />
             </Link>            
@@ -18,6 +18,6 @@ export default function Header() {
                     À Propos
                 </Link>
             </nav>
-        </div>
+        </header>
     )
 }
