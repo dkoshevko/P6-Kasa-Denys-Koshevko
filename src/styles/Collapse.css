@@ -1,4 +1,9 @@
+.collapse-container{
+    display: flex;
+    justify-content: center;
+}
 .collapse{
+    width: 80%;
     margin-bottom: 50px;
 }
 .collapse-header{

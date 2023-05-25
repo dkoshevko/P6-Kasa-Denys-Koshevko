@@ -4,7 +4,7 @@ import Collapse from '../components/Collapse';
 
 export default function About() {
     return (
-        <main>
+        <main className='about'>
             <BannerImage />
             <Collapse title='Fiabilité' text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
             <Collapse title='Respect' text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
