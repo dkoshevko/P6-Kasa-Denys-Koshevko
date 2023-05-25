@@ -69,21 +69,21 @@
     margin-left: 15px;
 }
 
-.housing-collapses{
+.housing-collapses-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.housing-collapse-container{
+.collapse-container.housing-collapse{
     width: 48%;
 }
-.housing-collapse{
+.collapse.housing-collapse{
     width: 100%;
 }
-.housing-collapse-title{
+.collapse-title.housing-collapse{
     font-size: 18px;
 }
-.housing-collapse-body{
+.collapse-body.housing-collapse{
     font-size: 18px;
 }
 .equipments-list{

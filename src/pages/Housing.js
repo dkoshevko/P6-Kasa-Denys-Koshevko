@@ -57,9 +57,9 @@ export default function Housing() {
                 <div className='housing-rating'>{ratingStars()}</div>
             </div>
         </div>
-        <div className='housing-collapses'>
-            <Collapse title='Description' text={description} />
-            <Collapse title='Équipements' text={equipmentsList()} />
+        <div className='housing-collapses-container'>
+            <Collapse title='Description' text={description} customClasses='housing-collapse' />
+            <Collapse title='Équipements' text={equipmentsList()} customClasses='housing-collapse' />
         </div>
       </main>
     );
