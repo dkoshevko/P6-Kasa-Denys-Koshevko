@@ -1,0 +1,45 @@
+@import './variables';
+@import './mixins';
+@import './placeholders';
+
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    display: flex;
+    margin-top: 20px;
+}
+.carousel-images{
+    width: 100%;
+    height: 100%;
+}
+.active{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.navigation{
+    cursor: pointer;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.prev-slide{
+    left: 23px;
+}
+.next-slide{
+    right: 23px;
+}
+.slide-number{
+    position: absolute;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}

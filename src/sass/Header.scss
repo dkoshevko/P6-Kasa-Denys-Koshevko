@@ -1,0 +1,26 @@
+@import './variables';
+@import './mixins';
+@import './placeholders';
+
+header{
+    @include flex(row, space-between, center);
+}
+.navbar__link{
+    @include font-properties(24px, 500, $main-color);
+    text-decoration: none;
+    margin-left: 57px;
+
+    &--active{
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header__logo{
+        width: 145px;
+    }
+    .navbar__link{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}

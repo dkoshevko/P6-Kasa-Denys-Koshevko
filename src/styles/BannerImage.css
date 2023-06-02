@@ -1,25 +1,52 @@
-.image-banner {
-    position: relative;
+.banner__image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 223px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 25px;
+  z-index: 0;
+}
+.banner__image--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.banner__title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #FFF;
+  position: relative;
+  z-index: 2;
+}
+
+.break__line {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .banner__image {
+    height: 111px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
-    height: 223px;
-    border-radius: 25px;
-    background-size: cover;
-    background-position: center center;
-    z-index: 0;
-} 
-.image-banner .banner-overlay {
-    position: absolute;
-    border-radius: 25px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-.image-banner > * {
-    position: relative;
-    z-index: 2;
-}
+    padding-left: 16px;
+  }
+  .banner__title {
+    font-size: 24px;
+    text-align: left;
+  }
+  .break__line {
+    display: initial;
+  }
+}/*# sourceMappingURL=BannerImage.css.map */
