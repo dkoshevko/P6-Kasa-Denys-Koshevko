@@ -22,26 +22,26 @@
         z-index: 1;
     }
 }
-.banner__title{
+.banner__title {
     @include font-properties(48px, 500, #FFF);
     position: relative;
     z-index: 2;
 }
-.break__line{
+.break__line {
     display: none;
 }
 
 @media screen and (max-width: 576px) {
-    .banner__image{
+    .banner__image {
         height: 111px;
         @include flex(row, left, center);
         padding-left: 16px;
     }
-    .banner__title{
+    .banner__title {
         font-size: 24px;
         text-align: left;
     }
-    .break__line{
+    .break__line {
         display: initial;
     }
 }

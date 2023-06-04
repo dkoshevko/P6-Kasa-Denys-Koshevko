@@ -2,20 +2,40 @@
 @import './mixins';
 @import './placeholders';
 
-.fof{
-    color: #FF6060;
-    font-weight: 700;
-    font-size: 288px;
-    margin-bottom: 66px;
+.not-found {
+    @include flex(column, space-evenly, center);
+    gap: 140px;
+
+    &__title {
+        margin-top: 139px;
+        @include font-properties(288px, 700, $main-color);
+    }
+    
+    &__message {
+        @include font-properties(36px, 500, $main-color);
+    }
+    
+    &__back-home {
+        @include font-properties(18px, 500, $main-color);
+    }
 }
-.fof-message{
-    color: #FF6060;
-    font-weight: 500;
-    font-size: 36px;
-    margin-bottom: 182px;
-}
-.back-home{
-    color: #FF6060;
-    font-weight: 500;
-    font-size: 18px;
+
+@media screen and (max-width: 576px) {
+    .not-found {
+        gap: 113px;
+
+        &__title {
+            font-size: 96px;
+            margin-top: 113px;
+        }
+
+        &__message {
+            font-size: 18px;
+            width: 260px;
+        }
+      
+        &__back-home {
+            font-size: 14px;
+        }
+    }
 }

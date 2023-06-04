@@ -1,6 +1,11 @@
 import '../styles/Thumb.css';
 
+/**
+* Composant carte de logement
+*/
 export default function Thumb({ housing }) {
+
+    // Utilisation des propriétés de ./logements.json
     const { id, title, cover } = housing;
 
     return (

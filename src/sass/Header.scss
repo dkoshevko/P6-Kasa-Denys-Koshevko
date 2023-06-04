@@ -2,10 +2,10 @@
 @import './mixins';
 @import './placeholders';
 
-header{
+header {
     @include flex(row, space-between, center);
 }
-.navbar__link{
+.navbar__link {
     @include font-properties(24px, 500, $main-color);
     text-decoration: none;
     margin-left: 57px;

@@ -2,13 +2,17 @@ import { Link } from 'react-router-dom';
 import logo from "../assets/logoBW.svg"
 import '../styles/Footer.css'
 
+/**
+* Composant footer
+*/
 export default function Footer() {
     return (
-        <footer className='footer'>
-            <Link to="/">
-                <img src={logo} alt="Logo Kasa" className='logo-bw' />
+        <footer>
+            {/* Lien vers la page "Accueil" */}
+            <Link to='/'>
+                <img src={logo} alt='Logo Kasa' className='footer__logo-bw' />
             </Link>            
-            <p className='copyright'>© 2020 Kasa. All rights reserved</p>
+            <p className='footer__copyright'>© 2020 Kasa. All rights reserved</p>
         </footer>
     )
 }

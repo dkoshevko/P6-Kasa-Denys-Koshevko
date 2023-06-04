@@ -1,16 +1,27 @@
-.footer {
-  background-color: black;
+footer {
+  background-color: #000;
   height: 209px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo-bw {
-  margin-top: 60px;
-}
-
-.copyright {
-  color: #FFFFFF;
-  font-weight: 500;
-  font-size: 24px;
+.footer__copyright {
   margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFF;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    margin-top: 27px;
+  }
+  .footer__copyright {
+    font-size: 12px;
+    width: 123px;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

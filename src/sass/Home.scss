@@ -2,7 +2,7 @@
 @import './mixins';
 @import './placeholders';
 
-.home__gallery{
+.home__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -12,6 +12,6 @@
     margin-bottom: 40px;
     background-color: #F6F6F6;
 }
-.home__gallery a{
+.home__gallery a {
     width: 0;
 }
