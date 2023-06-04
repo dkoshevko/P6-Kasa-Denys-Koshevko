@@ -34,8 +34,14 @@
 @media screen and (max-width: 576px) {
     .banner__image {
         height: 111px;
-        @include flex(row, left, center);
+        margin-bottom: 22px !important;
         padding-left: 16px;
+        border-radius: $radius-medium;
+        @include flex(row, left, center);
+
+        &--overlay {
+            border-radius: $radius-medium;
+        }
     }
     .banner__title {
         font-size: 24px;

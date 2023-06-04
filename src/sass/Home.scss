@@ -3,15 +3,20 @@
 @import './placeholders';
 
 .home__gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    border-radius: $radius-large;
-    padding: 3rem;
-    grid-gap: 3rem;
+    flex-wrap: wrap;
+    gap: 50px 60px;
+    padding: 50px;
     margin-bottom: 40px;
     background-color: #F6F6F6;
+    border-radius: $radius-large;
+    @include flex(row, baseline, normal);
 }
-.home__gallery a {
-    width: 0;
+
+@media screen and (max-width: 576px) {
+    .home__gallery {
+        background: none;
+        padding: 0;
+        gap: 20px;
+        @include flex(column, flex-start, center);
+    }
 }

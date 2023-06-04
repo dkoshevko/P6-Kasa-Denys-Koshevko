@@ -1,14 +1,24 @@
 .home__gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  border-radius: 25px;
-  padding: 3rem;
-  grid-gap: 3rem;
+  flex-wrap: wrap;
+  gap: 50px 60px;
+  padding: 50px;
   margin-bottom: 40px;
   background-color: #F6F6F6;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: normal;
 }
 
-.home__gallery a {
-  width: 0;
+@media screen and (max-width: 576px) {
+  .home__gallery {
+    background: none;
+    padding: 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }/*# sourceMappingURL=Home.css.map */

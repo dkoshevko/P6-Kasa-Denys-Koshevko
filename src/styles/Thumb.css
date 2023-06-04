@@ -5,10 +5,10 @@
 
 .housing__card {
   position: relative;
-  width: 26vw;
-  max-width: 340px;
+  width: 340px;
   height: 100%;
   aspect-ratio: 1/1;
+  flex: 0 1 33%;
 }
 .housing__card--cover {
   border-radius: 10px;
@@ -26,9 +26,19 @@
 }
 .housing__card--overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   border-radius: 10px;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   pointer-events: none;
+}
+
+@media screen and (max-width: 576px) {
+  .housing__card {
+    width: 100%;
+    aspect-ratio: 4/3;
+  }
+  .housing__card--overlay {
+    bottom: 5px;
+  }
 }/*# sourceMappingURL=Thumb.css.map */
