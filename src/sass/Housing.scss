@@ -37,6 +37,8 @@
         &--tag-list {
             padding: 0;
             margin: 0;
+            flex-wrap: wrap;
+            row-gap: 10px;
             @include flex(row, left, baseline);
 
             &__tag {

@@ -1,5 +1,5 @@
 import '../styles/Housing.css';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import housingData from '../datas/logements.json';
 import Collapse from '../components/Collapse';
 import Carousel from '../components/Carousel';
@@ -16,7 +16,12 @@ export default function Housing() {
 
     // Recherche du logement correspondant à l'ID dans ./logements.json
     const housing = housingData.find((item) => item.id === id);
-        
+
+    // Si l'ID n'existe pas --> redirection vers la page 404
+    if (!housing) {
+        return <Navigate to="/*" />;
+    }
+
     const 
     {   title, 
         pictures, 
