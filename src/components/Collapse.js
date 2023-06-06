@@ -1,5 +1,5 @@
+import '../styles/main.css';
 import { useState } from 'react';
-import '../styles/Collapse.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -40,9 +40,9 @@ export default function Collapse({ title, text, customClasses }) {
                     />
                 </div>
                 <div className={`collapse__container--body ${customClasses} ${getCollapseClass(isOpen)}`}>
-                    <p className='collapse__container--body__content'>
+                    <div className='collapse__container--body__content'>
                         {text}
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

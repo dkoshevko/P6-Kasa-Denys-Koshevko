@@ -1,6 +1,6 @@
-@import './variables';
-@import './mixins';
-@import './placeholders';
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
 
 footer{
     background-color: #000;
@@ -14,7 +14,7 @@ footer{
 }
 
 @media screen and (max-width: 576px) {
-    .footer {
+    footer {
         margin-top: 27px;
     }
     .footer__copyright {

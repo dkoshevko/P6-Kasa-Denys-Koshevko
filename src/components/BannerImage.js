@@ -1,4 +1,4 @@
-import '../styles/BannerImage.css';
+import '../styles/main.css';
 
 /**
 * Composant d'image de bannière

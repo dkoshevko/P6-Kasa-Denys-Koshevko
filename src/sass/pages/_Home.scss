@@ -1,6 +1,6 @@
-@import './variables';
-@import './mixins';
-@import './placeholders';
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
 
 .home__gallery {
     flex-wrap: wrap;
@@ -9,10 +9,16 @@
     margin-bottom: 40px;
     background-color: #F6F6F6;
     border-radius: $radius-large;
-    @include flex(row, baseline, normal);
+    @include flex(row, center, normal);
 }
 
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 1300px) {
+    .home__gallery {
+        gap: 2.9vw 3.2vw;
+    }
+}
+@media screen and (max-width: 596px) {
     .home__gallery {
         background: none;
         padding: 0;

@@ -1,5 +1,5 @@
+import '../styles/main.css';
 import { Link } from 'react-router-dom';
-import '../styles/Home.css';
 import BannerImage from '../components/BannerImage';
 import housingData from '../datas/logements.json';
 import Thumb from '../components/Thumb';

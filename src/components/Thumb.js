@@ -1,4 +1,4 @@
-import '../styles/Thumb.css';
+import '../styles/main.css';
 
 /**
 * Composant carte de logement

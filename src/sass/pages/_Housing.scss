@@ -1,6 +1,6 @@
-@import './variables';
-@import './mixins';
-@import './placeholders';
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
 
 .font {
     color: $main-color;
@@ -95,6 +95,10 @@
     margin-bottom: 0;
 }
 
+.collapse__container--header.housing-collapses__collapse {
+    border-radius: $radius-medium;
+}
+
 .collapse__title.housing-collapses__collapse {
     font-size: 18px;
 }
@@ -172,6 +176,9 @@
     }    
     .collapse.housing-collapses__collapse {
         width: 100%;
+    }
+    .collapse__container--header.housing-collapses__collapse {
+        border-radius: $radius-small;
     }
     .collapse__title.housing-collapses__collapse {
         font-size: 13px;

@@ -1,6 +1,6 @@
+import '../styles/main.css';
 import { Link } from 'react-router-dom';
 import logo from "../assets/logoBW.svg"
-import '../styles/Footer.css'
 
 /**
 * Composant footer

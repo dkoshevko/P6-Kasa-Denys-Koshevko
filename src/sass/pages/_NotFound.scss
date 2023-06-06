@@ -1,6 +1,6 @@
-@import './variables';
-@import './mixins';
-@import './placeholders';
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
 
 .not-found {
     @include flex(column, space-evenly, center);

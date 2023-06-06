@@ -1,4 +1,4 @@
-import '../styles/Housing.css';
+import '../styles/main.css';
 import { useParams, Navigate } from 'react-router-dom';
 import housingData from '../datas/logements.json';
 import Collapse from '../components/Collapse';

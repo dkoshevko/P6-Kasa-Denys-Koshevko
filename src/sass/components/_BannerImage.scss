@@ -1,6 +1,6 @@
-@import './variables';
-@import './mixins';
-@import './placeholders';
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
 
 .banner__image {
     @include flex(row, center, center);

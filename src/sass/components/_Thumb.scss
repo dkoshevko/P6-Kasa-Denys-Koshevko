@@ -1,0 +1,61 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
+
+.housing__card {
+    position: relative;
+    width: 26vw;
+    max-width: 340px;
+    height: 100%;
+    aspect-ratio: 1/1 !important;
+    flex: 0 1 33%;
+    display: flex;
+
+    &--cover {
+        border-radius: $radius-medium;
+        object-fit: cover;
+        align-self: center;
+        @extend %width-heignt-100;
+    }
+
+    &--title {
+        position: absolute;
+        bottom: 0;
+        text-align: left;
+        margin: 0 0.5rem 1rem 1rem;
+        @include font-properties(18px, 500, #FFF);
+    }
+
+    &--overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: $radius-medium;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        pointer-events: none;
+        @extend %width-heignt-100;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .housing__card {
+        width: 35vw;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .housing__card {
+        width: 27vw;
+    }
+}
+@media screen and (max-width: 794px) {
+    .housing__card {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 596px) {
+    .housing__card {
+        width: 100%;
+        max-width: none;
+        aspect-ratio: 4/3 !important;
+    }
+}

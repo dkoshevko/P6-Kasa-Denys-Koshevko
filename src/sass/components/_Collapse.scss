@@ -1,6 +1,6 @@
-@import './variables';
-@import './mixins';
-@import './placeholders';
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../utilities/placeholders';
 
 .collapse {
     @include flex(row, center, '');
@@ -75,19 +75,23 @@
             margin-bottom: 20px;
 
             &--header {
-                padding: 10px;
-    
+                
                 &__title {
                     font-size: 13px;
                 }
-        
+                
                 &__icon {
                     font-size: 16px;
+                    margin-right: 12px;
                 }
             }
             
             &--body {
-                font-size: 12px;
+                
+                &__content {
+                    font-size: 12px;
+                    padding: 10px;
+                }
             }
         }
     }
