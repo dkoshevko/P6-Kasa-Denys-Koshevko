@@ -8,42 +8,63 @@
     &__container {
         width: 80%;
         margin-bottom: 30px;
-    }
+        @include flex(column, '', center);
 
-    &__header {
-        cursor: pointer;
-        width: 100%;
-        border: none;
-        padding: 10px 20px 10px 15px;
-        border-radius: $radius-small;
-        background-color: $main-color;
-        @include flex(row, space-between, center);
-    }
+        &--header {
+            cursor: pointer;
+            width: 100%;
+            border-radius: $radius-small;
+            background-color: $main-color;
+            z-index: 1;
+            @include flex(row, space-between, center);
 
-    &__title {
-        @include font-properties(24px, 500, #FFF);
-    }
-
-    &__icon {
-        @include font-properties(24px, '', #FFF);
-
-        // Animation CSS
-        transition: transform 300ms ease-out;
-
-        // Gestion de l'ouverture/fermeture
-        &.is-open {
-            transform: rotate(-180deg);
+            &__checkbox {
+                display: none;
+            }
+    
+            &__title {
+                padding: 10px 20px 10px 15px;
+                display: block;
+                @include font-properties(24px, 500, #FFF);
+            }
+        
+            &__icon {
+                margin-right: 20px;
+                @include font-properties(24px, '', #FFF);
+        
+                // Animation CSS
+                transition: transform 300ms ease-out;
+                
+                // Gestion de l'ouverture/fermeture
+                &.is-open {
+                    transform: rotate(-180deg);
+                }
+            }
         }
-    }
-
-    &__body {
-        text-align: left;
-        background-color: #F6F6F6;
-        padding: 20px;
-        border-radius: $radius-small;
-        @include font-properties(24px, 400, $main-color);
-
-        // Animation..?
+        
+        &--body {
+            width: 100%;
+            text-align: left;
+            max-height: 0;
+            overflow: hidden;
+            transform: translateY(-5px);
+            z-index: 0;
+            
+            // Animation CSS
+            transition: max-height 300ms ease-out;
+            
+            // Gestion de l'ouverture/fermeture
+            &.is-open {
+                max-height: 1000px;
+            }
+            
+            &__content {
+                background-color: #F6F6F6;
+                padding: 22.5px 17.5px 17.5px 17.5px;
+                border-radius: 0 0 $radius-small $radius-small;
+                @include font-properties(18px, 400, $main-color);
+            }
+        }
     }
 }
 
@@ -52,22 +73,22 @@
         &__container{
             width: 100%;
             margin-bottom: 20px;
-        }
 
-        &__header {
-            padding: 10px;
-        }
-
-        &__title {
-            font-size: 13px;
-        }
-
-        &__icon {
-            font-size: 16px;
-        }
-
-        &__body {
-            font-size: 12px;
+            &--header {
+                padding: 10px;
+    
+                &__title {
+                    font-size: 13px;
+                }
+        
+                &__icon {
+                    font-size: 16px;
+                }
+            }
+            
+            &--body {
+                font-size: 12px;
+            }
         }
     }
 }

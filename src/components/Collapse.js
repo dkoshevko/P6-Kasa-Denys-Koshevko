@@ -21,21 +21,29 @@ export default function Collapse({ title, text, customClasses }) {
         setIsOpen(!isOpen);
     };
 
+    const getCollapseClass = (isOpen) => {
+        if (isOpen) {
+            return 'is-closed';
+        } else {
+            return 'is-open';
+        }
+    };
+
     return (
         <div className={`collapse ${customClasses}`}>
             <div className={`collapse__container ${customClasses}`}>
-                <button className={`collapse__header ${customClasses}`} onClick={toggleCollapse}>
-                    <h3 className={`collapse__title ${customClasses}`}>{title}</h3>
+                <div className={`collapse__container--header ${customClasses}`} onClick={toggleCollapse}>
+                    <h3 className={`collapse__container--header__title ${customClasses}`}>{title}</h3>
                     <FontAwesomeIcon
                         icon={faChevronUp}
-                        className={`collapse__icon ${isOpen ? '' : 'is-open'}`}
+                        className={`collapse__container--header__icon ${getCollapseClass(isOpen)}`}
                     />
-                </button>
-                {!isOpen && 
-                    <div className={`collapse__body ${customClasses} ${isOpen ? '' : 'is-open'}`}>
+                </div>
+                <div className={`collapse__container--body ${customClasses} ${getCollapseClass(isOpen)}`}>
+                    <p className='collapse__container--body__content'>
                         {text}
-                    </div>
-                }
+                    </p>
+                </div>
             </div>
         </div>
     );
