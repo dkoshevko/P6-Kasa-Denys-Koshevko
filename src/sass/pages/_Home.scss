@@ -9,7 +9,7 @@
     margin-bottom: 40px;
     background-color: #F6F6F6;
     border-radius: $radius-large;
-    @include flex(row, center, normal);
+    @include flex(row, stretch, normal);
 }
 
 
