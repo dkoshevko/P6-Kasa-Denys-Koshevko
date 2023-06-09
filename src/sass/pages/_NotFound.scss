@@ -12,6 +12,7 @@
     }
     
     &__message {
+        text-align: center;
         @include font-properties(36px, 500, $main-color);
     }
     

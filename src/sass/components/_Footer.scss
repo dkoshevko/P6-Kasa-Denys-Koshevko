@@ -10,6 +10,7 @@ footer{
 }
 .footer__copyright{
     margin-top: 30px;
+    text-align: center;
     @include font-properties(24px, 500, #FFF);
 }
 

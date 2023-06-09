@@ -228,6 +228,7 @@ footer {
 
 .footer__copyright {
   margin-top: 30px;
+  text-align: center;
   font-size: 24px;
   font-weight: 500;
   color: #FFF;
@@ -578,6 +579,7 @@ header {
   color: #FF6060;
 }
 .not-found__message {
+  text-align: center;
   font-size: 36px;
   font-weight: 500;
   color: #FF6060;
