@@ -7,7 +7,7 @@ import NotFound from '../pages/NotFound';
 export default function Router() {
     return (
         <Routes>
-            <Route path='/accueil' element={<Home />} />
+            <Route path='/' element={<Home />} />
             <Route path='/a-propos' element={<About />} />
             <Route exact path='/logement/:id' element={<Housing />} />
             <Route path='/*' element={<NotFound />} />

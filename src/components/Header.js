@@ -16,7 +16,7 @@ export default function Header() {
         <header>
 
             {/* Logo cliquable redirigeant vers la page d'accueil */}
-            <Link to='/accueil'>
+            <Link to='/'>
                 <img className='header__logo' src={logo} alt='Logo Kasa' />
             </Link>
 
@@ -24,7 +24,7 @@ export default function Header() {
             <nav className='navbar'>
 
                 {/* Liens vers les pages "Accueil" et "A Propos" avec classe active si l'URL correspond */}
-                <Link   to='/accueil' 
+                <Link   to='/' 
                         className={`navbar__link 
                         ${location.pathname === '/' ? 'navbar__link--active' : ''}`}>
                     Accueil
