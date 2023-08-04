@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/P6-Kasa-Denys-Koshevko/static/css/main.ac744b3e.css",
+    "main.js": "/P6-Kasa-Denys-Koshevko/static/js/main.fcd6b3aa.js",
+    "static/js/787.0ce615c0.chunk.js": "/P6-Kasa-Denys-Koshevko/static/js/787.0ce615c0.chunk.js",
+    "static/media/mountains.jpg": "/P6-Kasa-Denys-Koshevko/static/media/mountains.cf7da5a2ddc5d267b05d.jpg",
+    "static/media/plage.jpg": "/P6-Kasa-Denys-Koshevko/static/media/plage.91f6d081ef4509ea6b4f.jpg",
+    "static/media/Montserrat-Medium.ttf": "/P6-Kasa-Denys-Koshevko/static/media/Montserrat-Medium.a281f04d4c8926e7dea1.ttf",
+    "static/media/Montserrat-Bold.ttf": "/P6-Kasa-Denys-Koshevko/static/media/Montserrat-Bold.d0ca82d8ca07ba209aee.ttf",
+    "static/media/Montserrat-Regular.ttf": "/P6-Kasa-Denys-Koshevko/static/media/Montserrat-Regular.94bb495fba6077f669ed.ttf",
+    "static/media/logo.svg": "/P6-Kasa-Denys-Koshevko/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/logoBW.svg": "/P6-Kasa-Denys-Koshevko/static/media/logoBW.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/P6-Kasa-Denys-Koshevko/index.html",
+    "main.ac744b3e.css.map": "/P6-Kasa-Denys-Koshevko/static/css/main.ac744b3e.css.map",
+    "main.fcd6b3aa.js.map": "/P6-Kasa-Denys-Koshevko/static/js/main.fcd6b3aa.js.map",
+    "787.0ce615c0.chunk.js.map": "/P6-Kasa-Denys-Koshevko/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac744b3e.css",
+    "static/js/main.fcd6b3aa.js"
+  ]
+}
